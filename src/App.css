@@ -1,0 +1,9 @@
+.rows{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container{
+  margin: 20px;
+}
