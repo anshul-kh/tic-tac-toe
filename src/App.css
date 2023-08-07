@@ -1,9 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: rgb(0, 0, 0);
+  /* outline: 1px solid red; */
+  
+}
+
+.system{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .rows{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 115px;
+  gap: 15px;
+  background: rgba(64, 63, 63, 0);
+
 }
 
 .container{
+  
   margin: 20px;
+  width: 600px;
+  height:500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px;
+  border-radius: 20px ;
+  /* background: rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+background: rgba(64, 63, 63, 0.25);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.6px);
+-webkit-backdrop-filter: blur(9.6px);
+}
+
+
+.square{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 23px;
+  font-family: inherit;
+  outline: none;
+  position: relative;
+  --color: #b0aeaed3;
+  --background-color: #565656;
+  --border-color: darken(#565656, 11.5%);
+  color: var(--color);
+  background-color: var(--background-color);
+  border: solid 1px var(--border-color);
+  box-shadow:
+    0 0.2rem 0.4rem rgba(0, 0, 0, 0.496),
+    0 -0.3rem 0.6rem rgba(0, 0, 0, 0.332) inset;
+  transition: all 1s ease-out;
+
+}
+
+
+.player1,.player2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+}
+
+.pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(245, 245, 245, 0.669) ;
+  border-radius: 10%;
+  box-shadow:
+    0 0.2rem 0.4rem rgba(0, 0, 0, 0.496),
+    0 -0.3rem 0.6rem rgba(0, 0, 0, 0.332) inset;
+
+}
+
+.pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.player1{
+  margin-right:13%;
+}
+.player2{
+  margin-left:13%;
+  flex-direction: row-reverse;
+}
+
+.player1 h1,.player2 h1,.system h1{
+  font-size: 1.7em;
+  --color: #b0aeaed3;
+  color: var(--color);
+
+}
+
+.reset{
+  position: absolute;
+  top:5vh!important;;
+  right: 100px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.669);
+  border: none;
+  color:#565656;
+  cursor: pointer;
+
+}
+
+.anim {
+  width: 400px;
+  height: 500px;
 }
