@@ -3,11 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: rgb(0, 0, 0);
   /* outline: 1px solid red; */
   
 }
 
+body{
+  background-color: rgb(0, 0, 0);
+
+}
 .system{
   width: 100%;
   height: 100vh;
@@ -23,25 +26,25 @@
   justify-content: space-evenly;
   height: 115px;
   gap: 15px;
-  background: rgba(64, 63, 63, 0);
+  background: transparent;
 
 }
 
 .container{
   
   margin: 20px;
-  width: 600px;
+  width: 500px;
   height:500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 80px;
+  padding:50px;
   border-radius: 20px ;
-  /* background: rgba(255, 255, 255, 0.2); */
+  
   backdrop-filter: blur(10px);
-  border: 2px solid transparent;
-background: rgba(64, 63, 63, 0.25);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(62, 127, 52, 0.12);
+background: rgba(49, 49, 49, 0.25);
+box-shadow: 0px 4px 30px rgba(91, 90, 90, 0.487);
 backdrop-filter: blur(9.6px);
 -webkit-backdrop-filter: blur(9.6px);
 }
@@ -49,22 +52,20 @@ backdrop-filter: blur(9.6px);
 
 .square{
   width: 100%;
-  height: 100%;
+  height: 100px;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 23px;
+  border-radius: 13px;
   font-family: inherit;
   outline: none;
   position: relative;
   --color: #b0aeaed3;
-  --background-color: #565656;
-  --border-color: darken(#565656, 11.5%);
+  --background-color: #1D1E27;
   color: var(--color);
   background-color: var(--background-color);
-  border: solid 1px var(--border-color);
   box-shadow:
-    0 0.2rem 0.4rem rgba(0, 0, 0, 0.496),
-    0 -0.3rem 0.6rem rgba(0, 0, 0, 0.332) inset;
+    0 0.2rem 0.4rem rgba(11, 96, 157, 0.496),
+    0 -0.2rem 0.6rem rgba(53, 87, 160, 0.332) ;
   transition: all 1s ease-out;
 
 }
@@ -85,10 +86,10 @@ backdrop-filter: blur(9.6px);
   width: 60px;
   height: 60px;
   border: 5px solid rgba(245, 245, 245, 0.669) ;
-  border-radius: 10%;
+  border-radius: 20%;
   box-shadow:
     0 0.2rem 0.4rem rgba(0, 0, 0, 0.496),
-    0 -0.3rem 0.6rem rgba(0, 0, 0, 0.332) inset;
+    0 0.2rem 0.4rem rgba(0, 0, 0, 0.332) inset;
 
 }
 
@@ -96,6 +97,7 @@ backdrop-filter: blur(9.6px);
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 20%;
 
 }
 
@@ -131,4 +133,45 @@ backdrop-filter: blur(9.6px);
 .anim {
   width: 400px;
   height: 500px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .system{
+    height: 95vh;
+  }
+  .container{
+    width:340px;
+    height:350px;
+    gap: 20px;
+    margin: 15px;
+    box-shadow: 0px 4px 18px rgba(91, 90, 90, 0.487);
+    padding-left: 35px;
+    padding-right:35px ;
+  }
+
+  .rows{
+    height: 100px;
+    gap: 13px;
+  }
+
+  .square{
+    width: 100%;
+    height: 80px;
+    box-shadow:
+    0 0.1rem 0.2rem rgba(11, 96, 157, 0.496),
+    0 -0.1rem 0.3rem rgba(53, 87, 160, 0.332) ;
+  }
+
+  .reset{
+    right: 15px;
+    top: 2vh;
+  }
+
+  .player1 h1,.player2 h1,.system h1{
+    font-size: 1.3em;
+
+  
+  }
+  
 }
