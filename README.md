@@ -6,10 +6,6 @@ mentioned in the desciption or deployment section.
 <hr>
 <br>
 
-# Here are some screenshots
-
-
-<hr>
 <br>
 # Getting Started with this project
 
